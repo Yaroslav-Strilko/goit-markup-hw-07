@@ -400,11 +400,11 @@ body {
   align-items: center;
 }
 
-.menu-link {
+.menu__link {
   color: var(--title-text-color);
   transition: color var(--transition-dur-and-func);
 }
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   background: var(--white); /* Цвет фона под ссылкой */
   color: var(--accent-color); /* Цвет ссылки */
 }
