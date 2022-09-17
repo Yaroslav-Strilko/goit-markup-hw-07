@@ -21,7 +21,7 @@
 }
 
 .logo-footer {
-  font-family: var(--logo-font);
+  font-family: $logo-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -48,6 +48,6 @@
 
   &:hover,
   &:focus {
-  color: var(--accent-color);
+    color: var(--accent-color);
   }
 }
