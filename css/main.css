@@ -32,6 +32,11 @@
   margin: -1px;
 }
 
+.section-standard {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Скидаємо налаштування від браузера */
 /* Скидаємо налаштування заголовків */
 h1,
@@ -88,11 +93,6 @@ body {
 /* Задаємо основні параметри контейнеру */
 .page {
   background: var(--white);
-}
-
-.section-standard {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .container {
