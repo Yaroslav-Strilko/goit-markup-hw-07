@@ -16,21 +16,26 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
        <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
- 
+    
   </head>
   <body class="page">
 
     <!--==================== Шапка сайту ====================-->
-    <header class="header">
-      <div class="container page-header-container">
-        <div class="page-navigation">
+    <header class="page-header">
+      <div class="container page-header__container">
+        <div class="page-header__navigation ">
           <nav>
             <a href="" class="logo link">
               <span style="color: #2196f3">Web</span
               ><span style="color: #000000">Studio</span>
             </a>
           </nav>
+          <button type="button" class="open-mobile-menu-btn"> 
+            <svg
+                class="open-mobile-menu-btn__icon">
+                <use href="./images/sprite.svg#icon-burger"></use>
+              </svg>
+          </button> 
           <ul class="menu list">
             <li class="menu__item--here">
               <a class="menu__link link menu__link--here" href="">Студія</a>
@@ -75,11 +80,33 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu">
+        <div class="conteiner mobile-menu__container">
+          <button  class="mobile-menu__close-btn" data-modal-close>
+          <svg class="mobile-menu__close-icon" width="19px" height="19px">
+            <use href="./images/sprite.svg#icon-x"</use>
+          </svg>
+        </button>
+          <ul class="mobile-menu__list list">
+            <li class="menu__item--here">
+              <a class="menu__link link menu__link--here" href="">Студія</a>
+            </li>
+            <li>
+              <a class="link menu__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="menu__link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      
     </header>
     <!-- Головна частина-->
     <main>
       <!-- Ефективні рішення-->
-      <section class="main-section main-bg">
+      <!-- <section class="main-section main-bg">
         <div class="">
           <div class="container">
             <h1 class="title-first">Ефективні рішення для вашого бізнесу</h1>
@@ -89,10 +116,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наші переваги  -->
-      <section class="section-standard">
+      <!-- <section class="section-standard">
         <h2 hidden>Наші переваги</h2>
         <div class="container section-our-advantages">
           <ul class="list section-text">
@@ -165,10 +192,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Чим ми займаємося-->
-      <section class="about section-standard">
+      <!-- <section class="about section-standard">
         <div class="container">
           <h2 class="section-title-second">Чим ми займаємося</h2>
           <ul class="list list-our-work">
@@ -195,9 +222,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша команда-->
-      <section class="section-standard section-our-advant">
+      <!-- <section class="section-standard section-our-advant">
         <div class="container">
           <h2 class="section-title-second">Наша команда</h2>
 
@@ -480,11 +507,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- - Постійні клієнті-->
 
-      <section class="section-standard">
+      <!-- <section class="section-standard">
         <div class="container section-our-work">
           <h2 class="section-title-second">Постійні клієнти</h2>
 
@@ -569,10 +596,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Підвал сайту-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container container-footer">
         <div>
           <p class="logo-footer">
@@ -580,11 +607,11 @@
               <span style="color: #2196f3">Web</span
               ><span style="color: #ffffff">Studio</span>
             </a>
-          </p>
+          </p> -->
 
           <!-- Контакти-->
 
-          <address class="address">
+          <!-- <address class="address">
             <ul class="list footer-list">
               <li>
                 <a
@@ -606,10 +633,10 @@
               </li>
             </ul>
           </address>
-        </div>
+        </div> -->
 
         <!-- ==========ПРИЄДНУЙТЕСЬ========= -->
-        <div class="container-social-footer">
+        <!-- <div class="container-social-footer">
           <h3 class="social-title-footer">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="social-list list">
             <li>
@@ -668,20 +695,18 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 <!-- /* ==========END Іконки соцмереж --- підвал ========== */ -->
 <!-- /* ========== Підпишиться на розсилку --- підвал ========== */ -->
-<div class="subscribe-footer">
+<!-- <div class="subscribe-footer">
           <h3 class="subscribe-form-title">Підпишиться на розсилку</h3>
             <form class="subscribe-form">
                <label class="subscribe-form-field">
-                    <!-- <span class="subscribe-form-input-wrapper"> -->
                      <input 
                        type="email" 
                        class="subscribe-form-input"
                        placeholder="E-mail" 
                      />
-                    <!-- </span> -->
                </label>   
                    
            
@@ -690,13 +715,13 @@
                </button>
            
           </form>
-  </div>
+  </div> -->
 <!-- /* ==========END Підпишиться на розсилку --- підвал ========== */ -->
-      </div>
-    </footer>
+      <!-- </div>
+    </footer> -->
 
     <!--is-hidden  -->
-    <div class="backdrop  " data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="11px" height="11px">

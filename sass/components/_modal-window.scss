@@ -10,9 +10,7 @@
 }
 .modal-close-btn {
   @include flexCenter;
-  // display: flex;      /*за допомогою flex центруэмо svg   */
-  // align-items: center; /*за допомогою flex центруэмо svg   */
-  // justify-content: center; /*за допомогою flex центруэмо svg   */
+  
   position: absolute; /*за допомогою absolute розміщаємо кнопку в кут   */
   top: 8px;
   right: 8px;
